@@ -1,4 +1,4 @@
-# Quiz-3
+# Containarized deployment
 
 A Python-based project with Docker support for containerized deployments.
 
