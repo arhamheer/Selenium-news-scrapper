@@ -1,36 +1,43 @@
-# Containerized Deployment
+# Selenium News Scraper - ProPakistani - DevOps
 
-A Python-based project with Docker support for containerized deployments.
+A Python-based project with Docker support for containerized deployments of a Selenium news scraper targeting ProPakistani news website.
 
 ## Overview
 
-This repository contains quiz-related code and configurations for running in containerized environments. It demonstrates best practices for deploying Python applications using Docker containers for consistency across development, testing, and production environments.
+This repository contains a Selenium-based news scraper configured for running in containerized environments. It demonstrates best practices for deploying web scraping applications using Docker containers for consistent and reproducible deployments.
 
 ## Technology Stack
 
-- **Python** (72.6%) - Core application logic
+- **Python** (72.6%) - Core scraping logic and application code
 - **Dockerfile** (27.4%) - Container configuration
+- **Selenium** - Web automation and scraping framework
+- **Docker** - Containerization platform
 
 ## Project Purpose
 
 This project is designed to:
-- Provide a scalable quiz application that can run in containerized environments
-- Demonstrate Docker containerization best practices
+- Provide a scalable news scraper that can run in containerized environments
+- Scrape ProPakistani news articles efficiently
+- Demonstrate Docker containerization best practices for web scraping applications
 - Enable seamless deployment across different platforms and environments
 - Maintain consistency between development and production setups
 
 ## Features
 
-- Python-based quiz application
+- Python-based Selenium news scraper
+- ProPakistani news article extraction
 - Docker containerization for easy deployment
 - Environment-agnostic setup
 - Docker support for isolated execution environments
+- DevOps-ready configuration
 
 ## Getting Started
 
 ### Prerequisites
 - Python 3.x
 - Docker (optional, for containerized deployment)
+- Chrome/Chromium browser (for Selenium WebDriver)
+- ChromeDriver (compatible with your Chrome version)
 
 ### Installation
 
@@ -38,31 +45,3 @@ Clone the repository:
 ```bash
 git clone https://github.com/arhamheer/quiz-3.git
 cd quiz-3
-```
-
-### Running Locally
-
-To run the application locally without Docker:
-```bash
-python -m pip install -r requirements.txt
-python app.py
-```
-
-### Running with Docker
-
-Build the Docker image:
-```bash
-docker build -t quiz-3 .
-```
-
-Run the container:
-```bash
-docker run -p 5000:5000 quiz-3
-```
-
-## Project Structure
-
-The project includes:
-- **Python application files** - Core quiz logic and application code
-- **Dockerfile** - Container configuration for deployment
-- **requirements.txt** - Python dependencies
